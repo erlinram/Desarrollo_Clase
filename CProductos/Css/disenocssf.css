@@ -1,0 +1,103 @@
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0px;
+}
+#titulo1 {
+    padding: 1px;
+    background-color: rgb(42, 112, 112);
+}
+#titulo1 h1{
+    text-align: center;
+}
+ul {
+    list-style: none; /*Eliminar viñetas*/
+    margin: 0; /*Eliminar margen*/
+    padding: 0; /*Eliminar margen*/
+    overflow: hidden; /*Cortar el contenido si no cabe*/
+    display: flex; /*Contenedor flexible*/
+}
+li a, .btndesplegable {
+    display: inline-block; /*Desplegar elemento en forma de bloque*/
+    color: rgb(0, 1, 2); /*Aplicar color a la fuente*/
+    text-align: center; /*Centrar el texto*/
+    padding: 10px 16px; /*Aplicar padding*/
+    text-decoration: none; /*Desactivar la decoracion*/
+}
+li a:hover, .f_desplegable:hover .btndesplegable {
+    background-color: rgb(19, 127, 141); 
+    color: white;
+}
+.cont-desplegable {
+    display: none; /*Ocultar contenedor */
+    position: absolute; /*Aplicar pisicion absoluta*/
+    background-color: #f5f7f8; /*Aplicar color de fondo*/
+    min-width: 200px; /*Aplicar ancho minimo de 200px*/
+
+    /*Aplicar forma*/
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1; /*Ubicarlo sobre los otros contenedores*/
+}
+.f-desplegable:hover .cont-desplegable {
+    display: block; /*Mostrar el contenedor*/
+}
+
+.cont-desplegable a {
+    color: black;  /*Aplicar color negro al texto*/
+    padding: 12px 16px; /*Agregar relleno*/
+    text-decoration: none; /*Eliminar las caracteristicas del texto*/
+    display: block; /*Convertir formato bloque el elemento*/
+    text-align: left; /*Alinear el texto a la izquierda*/
+}
+.cont-desplegable a:hover {
+    background-color: #d8d6d6; /*Color del fondo*/
+    color: rgb(3, 47, 68); /*Color del texto*/
+}
+.seccion-form {
+    width: 100%; /*Ancho del elemento*/
+    display: flex; /*Hacer el elemtento flexible */
+    flex-flow: row wrap; 
+    justify-content: center; /*Centrar contenido*/
+    padding: 0px 0px 10px 0px; 
+}
+.s-encabezado {
+    width: 700px;
+    background-image: linear-gradient(#3b1804, #0c504a);
+    text-align: center;
+    padding: 0 20px;
+}
+form {
+    width: 700px; /*Ancho del formulario*/
+    padding: 20px; /*Relleno del formulario*/
+    line-height: 30px; /*Interlineado*/
+}
+#codnom, #cospor, #prefecha{
+    display: flex;
+    flex-wrap: wrap;
+}
+.codnom1 {
+    flex: auto;
+}
+.campof {
+    padding: 6px, 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color: #05588f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+}
+input[type=submit]:hover {
+    background-color: #087179;
+} 
+footer{
+    margin: auto;
+    height: 50px;
+    padding: 5px;
+}
